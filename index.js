@@ -1,5 +1,5 @@
 function findMinAndRemove(array){
-  console.log('findMinAndRemove 1:',array);
+  // console.log('findMinAndRemove 1:',array);
   let min = array[0],
       minIndex = 0;
   for(let i = 1; i < array.length; i++){
@@ -9,16 +9,17 @@ function findMinAndRemove(array){
     }
   }
   array.splice(minIndex,1);
-  console.log('findMinAndRemove 2:',array);
+  // console.log('findMinAndRemove 2:',array);
   return min;
 }
 
 function selectionSort(array){
-  console.log('Unsorted Array at first',array);
+  // console.log('Unsorted Array at first',array);
   const sorted = [];
-  for(let i = 0; i < array.length; i++){
+  const len = array.length;
+  for(let i = 0; i < len; i++){
     sorted[i] = findMinAndRemove(array);
-    console.log('Sorted array:',sorted);
+    // console.log('Sorted array:',sorted);
   }
   return sorted;
 }
