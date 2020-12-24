@@ -1,4 +1,5 @@
 function findMinAndRemove(array){
+  console.log(array);
   let min = array[0],
       minIndex = 0;
   for(let i = 1; i < array.length; i++){
@@ -8,6 +9,7 @@ function findMinAndRemove(array){
     }
   }
   array.splice(minIndex,1);
+  console.log(array);
   return min;
 }
 
