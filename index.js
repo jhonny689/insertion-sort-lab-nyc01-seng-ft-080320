@@ -16,5 +16,7 @@ function selectionSort(array){
   for(let i = 0; i < array.length; i++){
     sorted[i] = findMinAndRemove(array);
   }
+  console.log(array);
+  console.log(sorted);
   return sorted;
 }
