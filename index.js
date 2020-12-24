@@ -12,5 +12,9 @@ function findMinAndRemove(array){
 }
 
 function selectionSort(array){
-
+  const sorted = [];
+  for(let i = 0; i < array.length; i++){
+    sorted[i] = findMinAndRemove(array);
+  }
+  return sorted;
 }
